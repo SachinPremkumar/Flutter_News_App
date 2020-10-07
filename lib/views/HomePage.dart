@@ -151,13 +151,13 @@ class BlogItems extends StatelessWidget {
             MaterialPageRoute(builder: (context) => Article(articleUrl: url)));
       },
       child: Container(
-          margin: EdgeInsets.only(bottom: 15),
+          margin: EdgeInsets.only(bottom: 20),
           child: Column(
             children: [
               ClipRRect(
                   borderRadius: BorderRadius.only(
-                      topLeft: Radius.circular(20),
-                      topRight: Radius.circular(20)),
+                      topLeft: Radius.circular(18),
+                      topRight: Radius.circular(18)),
                   child: Image.network(imageUrl)),
               SizedBox(height: 5),
               Text(
@@ -167,6 +167,7 @@ class BlogItems extends StatelessWidget {
                   color: Colors.black,
                   fontWeight: FontWeight.bold,
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 5),
               Text(
@@ -175,6 +176,7 @@ class BlogItems extends StatelessWidget {
                   fontSize: 13,
                   color: Colors.black,
                 ),
+                textAlign: TextAlign.center,
               ),
             ],
           )),
